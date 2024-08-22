@@ -1,0 +1,2 @@
+Before swapping: x = 20, y = 10
+After swapping: x = 10, y = 20
