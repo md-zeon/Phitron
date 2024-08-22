@@ -1,0 +1,3 @@
+In main x = 10
+In main after pass by value function call x = 10
+In main after pass by reference function call x = 120
