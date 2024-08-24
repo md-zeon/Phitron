@@ -1,0 +1,15 @@
+Question 01:
+a. Explain Stack and Heap memory.
+b. Why do we need dynamic memory allocation? Explain with examples.
+c. How to create a dynamic array? What are the benefits of it?
+
+Question 02:
+a. How does class and object work? How to declare an object?
+b. What is a constructor and why do we need this? How to create a constructor show with an example.
+c. Create a class named Person where the class will have properties name(string), height(float) and age(int). Make a constructor and create a dynamic object of that class and finally pass proper values using the constructor. 
+
+Question 03:
+a. What is the size that an object allocates to the memory?
+b. Can you return a static object from a function? If yes, show with an example.
+c. Why do we need -> (arrow sign)?
+d. Create two objects of the Person class from question 2-c and initialize them with proper value. Now compare whose age is greater, and print his/her name.
