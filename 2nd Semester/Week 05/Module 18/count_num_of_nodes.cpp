@@ -81,10 +81,21 @@ void levelOrder(Node* root) {
     }
 }
 
+
+int count(Node* root) {
+    if (root == NULL) {
+        return 0;
+    }
+    return 1 + count(root->left) + count(root->right);
+}
+
+
 int main() {
     Node* root = input_tree();
 
     levelOrder(root);
+    cout << endl;
+    cout << count(root) << endl;
     
 
     return 0;

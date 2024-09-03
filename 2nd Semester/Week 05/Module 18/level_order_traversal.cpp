@@ -14,6 +14,10 @@ public:
 };
 
 void levelOrder(Node* root) {
+    if (root == NULL) {
+        cout << "Tree is Empty" << endl;
+        return;
+    }
     queue<Node*> q;
     q.push(root);
     while (!q.empty()) {
@@ -53,6 +57,7 @@ int main() {
     b->right = d;
     d->left = f;
     d->right = g;
+    
 
     levelOrder(root);
 

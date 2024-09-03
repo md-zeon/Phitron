@@ -81,10 +81,27 @@ void levelOrder(Node* root) {
     }
 }
 
+
+int maxHeight(Node* root) {
+    if (root == NULL) {
+        return 0;
+    }
+    // 1. root node er height 1
+    // 2. left subtree er height
+    // 3. right subtree er height
+    // 4. max height
+    int leftHeight = maxHeight(root->left);
+    int rightHeight = maxHeight(root->right);
+    return max(leftHeight, rightHeight) + 1;
+}
+
+
 int main() {
     Node* root = input_tree();
 
     levelOrder(root);
+    cout << endl;
+    cout << maxHeight(root) << endl;
     
 
     return 0;
