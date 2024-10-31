@@ -1,0 +1,13 @@
+Classes of Time Complexities:
+
+1. O(1) - Constant Time Complexity
+2. O(log n) - Logarithmic Time Complexity
+3. O(n) - Linear Time Complexity
+4. O(n log n) - Linearithmic Time Complexity
+5. O(n^2) - Quadratic Time Complexity
+6. O(n^3) - Cubic Time Complexity
+7. O(2^n) - Exponential Time Complexity
+8. O(n^n) - Exponential Time Complexity
+9. O(n!) - Factorial Time Complexity
+
+O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(n^3) < O(2^n) < O(n^n) < O(n!)

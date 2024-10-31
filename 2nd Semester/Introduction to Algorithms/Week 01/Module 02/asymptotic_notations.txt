@@ -1,0 +1,12 @@
+Asymptotic Notations:
+The following notations are used to describe the asymptotic behavior of functions:
+
+Big-Oh Notation
+Big-Omega Notation
+Big-Theta Notation
+The Big-Oh notation is used to describe the upper bound of a function's growth rate, while
+Big-Omega notation is used to describe the lower bound of a function's growth rate. 
+Big-Theta notation is used to describe the exact growth rate of a function.
+
+Asymptotic Notations are used to describe the time and space complexity of algorithms. They provide
+a way to express the upper and lower bounds of an algorithm's performance as the input size increases.
