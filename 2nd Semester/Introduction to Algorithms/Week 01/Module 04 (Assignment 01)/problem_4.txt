@@ -1,0 +1,45 @@
+// (a)
+// The outer loop runs log(n) times, and the inner loop runs n/5 times.
+// So, the total time complexity is O(n log n).
+int count = 0;
+for (int i = n; i > 0; i /= 2) 
+{
+    for (int j = 0; j < n; j+=5) 
+    {
+        count += 1;
+    }
+}
+f(n) = O(n log n)
+
+// (b)
+// The loop runs until i*i < n, which is equivalent to i < sqrt(n).
+// So, the time complexity is O(sqrt(n)).
+for(int i = 1; i*i < n; i++)
+{
+    cout << "hello";
+}
+f(n) = O(√n)
+
+// (c)
+// The outer loop runs log(n) times, and the inner loop runs sqrt(n)/2 times.
+// So, the total time complexity is O(sqrt(n) * log n).
+for(int i = 1; i < n; i = i*2)
+{
+    for(int j = 1; j*j < n; j += 2)
+    {
+        cout << "hello";
+    }
+}
+f(n) = O(√n * log n)
+
+// (d)
+// The loop runs until m > n, and m is incremented by i in each iteration.
+// Since i starts from 0 and increments by 1 in each iteration, m will be incremented by 0, 1, 2, 3, ... in each iteration.
+// This is equivalent to the sum of an arithmetic series, which is n*(n+1)/2.
+// So, the time complexity is O(n^2).
+int m = 1;
+for(int i = 0; m <= n; i++)
+{
+    m += i;
+}
+f(n) = O(n^2)
