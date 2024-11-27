@@ -1,0 +1,29 @@
+Graph Representations:
+
+Graphs are a fundamental data structure in computer science, and they have numerous
+applications in various fields. A graph is a non-linear data structure consisting of 
+nodes or vertices connected by edges. Each node may have a value associated with it, and
+each edge may have a weight or label associated with it.
+
+Graphs can be represented in different ways, including:
+
+1. Adjacency Matrix: This is a matrix where the entry at row i and column j represents
+                        the weight of the edge between vertex i and vertex j. If there is
+                        no edge between vertex i and vertex j, the entry is 0.
+
+2. Adjacency List: This is a list of edges where each edge is represented as a pair of
+                    vertices. If there is no edge between two vertices, it is not
+                    included in the list.
+
+3. Incidence List: This is a list of edges where each edge is represented as a pair of
+                     vertices and a direction (in or out) of the edge.
+
+4. Implicit Graph: This is a graph where the edges are not explicitly stored, but can be
+                    inferred from the structure of the graph.
+
+5. Edge List: This is a list of edges where each edge is represented as a pair of vertices
+                and a weight.
+
+6. Incidence Matrix: This is a matrix where the entry at row i and column j represents
+                    the presence or absence of an edge between vertex i and vertex j.
+

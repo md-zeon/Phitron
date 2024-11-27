@@ -1,0 +1,79 @@
+# Graph Terminologies
+## Definitions
+
+### Graph
+A non-linear data structure consisting of nodes/vertices connected by edges.
+
+### Node/Vertex
+A point in a graph that represents a data point.
+
+### Edge
+A connection between two nodes/vertices.
+
+### Neighbor
+A node/vertex that is directly connected to another node/vertex by an edge.
+
+### Degree
+The number of edges connected to a node/vertex.
+
+### Weighted Graph
+A graph where each edge has a weight or label associated with it.
+
+### Unweighted Graph
+A graph where each edge has no weight or label associated with it.
+
+### Directed Graph
+A graph where each edge has a direction associated with it.
+
+### Undirected Graph
+A graph where each edge does not have a direction associated with it.
+
+### Simple Graph
+A graph where there is at most one edge between any two nodes/vertices.
+
+### Cycle
+A path that starts and ends at the same node/vertex.
+
+### Path
+A sequence of nodes/vertices connected by edges.
+
+### Connected Graph
+A graph where there is a path between every pair of nodes/vertices.
+
+### Disconnected Graph
+A graph where there is no path between at least one pair of nodes/vertices.
+
+### Subgraph
+A graph that is a subset of a larger graph.
+
+### Spanning Tree
+A subgraph that is a tree and contains all the nodes/vertices of the original graph.
+
+### Shortest Path
+The minimum-weight path between two nodes/vertices in a weighted graph.
+
+### Topological Sort
+A linear ordering of nodes/vertices in a directed acyclic graph (DAG) such that for every edge (u, v), node u comes before node v in the ordering.
+
+### Additional Definitions
+
+### Adjacency Matrix
+A matrix representation of a graph where the entry at row i and column j represents the weight of the edge between node i and node j.
+
+### Adjacency List
+A list representation of a graph where each node is associated with a list of its neighboring nodes.
+
+### Graph Isomorphism
+Two graphs are said to be isomorphic if there is a one-to-one correspondence between their nodes and edges.
+
+### Graph Homomorphism
+A mapping between two graphs that preserves the edge structure.
+
+### Strongly Connected Graph
+A graph where there is a path from every node to every other node.
+
+### Weakly Connected Graph
+A graph where there is a path from every node to every other node, ignoring the direction of edges.
+
+### Special Graph (Tree)
+A connected graph with no cycles. No. of edges = (No. of vertices - 1)
