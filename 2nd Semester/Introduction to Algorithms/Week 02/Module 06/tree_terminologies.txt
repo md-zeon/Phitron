@@ -1,0 +1,10 @@
+Tree Data Structure Terminologies:
+
+1. Root Node: The topmost node in the tree.
+2. Parent Node: A node that has at least one child node.
+3. Child Node: A node that has a parent node.
+4. Sibling Node: Nodes that have the same parent node.
+5. Leaf Node: A node with no child nodes.
+6. Edge: A connection between two nodes.
+7. Depth: The number of edges from the root to a leaf node.
+8. Height: The maximum depth of the tree.

@@ -1,0 +1,21 @@
+Graph Traversal:
+- Depth-First Search (DFS)
+- Breadth-First Search (BFS)
+
+Algorithm:
+1. Create a graph with nodes and edges.
+2. Choose a starting node (source node)
+3. Perform DFS or BFS traversal from the source node
+4. Mark visited nodes and keep track of the traversal order.
+
+DFS:
+1. Start at the source node
+2. Explore as far as possible along each branch before backtracking
+3. Mark visited nodes
+4. Repeat steps 2-3 until all nodes are visited
+
+BFS:
+1. Start at the source node
+2. Explore all nodes at the current level before moving to the next level
+3. Mark visited nodes
+4. Repeat steps 2-3 until all nodes are visited
