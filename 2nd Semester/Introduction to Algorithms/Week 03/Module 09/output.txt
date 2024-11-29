@@ -1,0 +1,7 @@
+Distance of node 1 is: 0
+Distance of node 2 is: 3
+Distance of node 3 is: 5
+Distance of node 4 is: 6
+Distance of node 5 is: 8
+Distance of node 6 is: 7
+Distance of node 7 is: 10

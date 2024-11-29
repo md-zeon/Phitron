@@ -1,0 +1,21 @@
+Dijkstra Algorithm Concept:
+The Dijkstra algorithm is a well-known algorithm in graph theory for finding the shortest path between nodes in
+a graph. It was conceived by Dutch computer scientist Edsger W. Dijkstra in 195
+9. The algorithm works by maintaining a priority queue of nodes to visit, where the priority of each
+node is its minimum distance from the source node. The algorithm iteratively selects the node with the
+minimum priority (i.e., the node with the shortest distance from the source) and updates the distances
+of its neighboring nodes.
+
+Dijkstra Algorithm Steps:
+1.  Initialize the distance to the source node as 0 and all other nodes as infinity.
+2.  Create a priority queue and add the source node to it.
+3.  While the priority queue is not empty:
+*   Dequeue the node with the minimum priority (i.e., the node with the shortest
+distance from the source
+*   For each neighbor of the dequeued node that has not been visited yet:
+*   Calculate the tentative distance from the source to the neighbor through the dequeued node
+*   If the calculated distance is less than the current distance to the neighbor, update the distance to
+the neighbor
+*   Add the neighbor to the priority queue if it has not been visited before
+4.  Once the priority queue is empty, the shortest distances from the source to all other nodes
+are stored in the distance array.

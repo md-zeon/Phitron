@@ -1,0 +1,19 @@
+Shortest Path Algorithm
+The shortest path algorithm is a method used to find the shortest path between two nodes in a graph.
+The algorithm works by maintaining a set of nodes that have been visited and a set of nodes that have
+not been visited. The algorithm starts at the source node and explores its neighbors, selecting the
+neighbor with the shortest distance. The algorithm continues to explore the neighbors of the selected
+node until it reaches the destination node
+
+Algorithm:
+1. Initialize the source node and the destination node
+2. Initialize the distance to the source node as 0 and the distance to all other nodes as
+3. Create a set of visited nodes and a set of unvisited nodes
+4. While the set of unvisited nodes is not empty
+    a. Select the node with the shortest distance from the set of unvisited nodes
+    b. Mark the selected node as visited
+    c. For each neighbor of the selected node
+        i. Calculate the tentative distance from the source node to the neighbor through the selected node
+        ii. If the calculated distance is less than the current distance to the neighbor, update the distance to
+        iii. Add the neighbor to the set of visited nodes
+5. Return the shortest distance from the source node to the destination node
