@@ -1,0 +1,46 @@
+Merging:
+15 
+4 
+Merged:
+4 15 
+Merging:
+4 15 
+3 
+Merged:
+3 4 15 
+Merging:
+9 
+2 
+Merged:
+2 9 
+Merging:
+3 4 15 
+2 9 
+Merged:
+2 3 4 9 15 
+Merging:
+8 
+10 
+Merged:
+8 10 
+Merging:
+8 10 
+12 
+Merged:
+8 10 12 
+Merging:
+6 
+1 
+Merged:
+1 6 
+Merging:
+8 10 12 
+1 6 
+Merged:
+1 6 8 10 12 
+Merging:
+2 3 4 9 15 
+1 6 8 10 12 
+Merged:
+1 2 3 4 6 8 9 10 12 15 
+1 2 3 4 6 8 9 10 12 15 
