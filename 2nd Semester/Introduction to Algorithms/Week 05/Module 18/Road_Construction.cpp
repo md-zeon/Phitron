@@ -137,9 +137,8 @@ int main() {
         if (dsu_find(a) != dsu_find(b)) {
             cmp--;
             dsu_union(a, b);
-            cout << cmp << " " << max_size << endl;
         }
-        
+        cout << cmp << " " << max_size << endl;
     }
 
     return 0;
