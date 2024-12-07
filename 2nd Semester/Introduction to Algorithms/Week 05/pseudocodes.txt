@@ -1,0 +1,189 @@
+1. DFS (Depth-First Search):
+
+Function DFS(node, visited):
+    Mark node as visited
+    For each neighbor of node:
+        If neighbor is not visited:
+            DFS(neighbor, visited)
+
+Main:
+    visited = array of size n, initialized to false
+    For each node in graph:
+        If node is not visited:
+            DFS(node, visited)
+
+
+
+2. BFS (Breadth-First Search):
+
+Function BFS(start):
+    Create a queue, q, and enqueue start
+    visited[start] = true
+    While q is not empty:
+        node = q.dequeue()
+        Process node
+        For each neighbor of node:
+            If neighbor is not visited:
+                visited[neighbor] = true
+                q.enqueue(neighbor)
+
+Main:
+    visited = array of size n, initialized to false
+    For each node in graph:
+        If node is not visited:
+            BFS(node)
+
+
+
+3. Dijkstra's Algorithm:
+
+Function Dijkstra(graph, source):
+    Initialize distances of all nodes to ∞, dist[source] = 0
+    Create a min-heap priority queue, pq
+    pq.push((0, source))  // (distance, node)
+    While pq is not empty:
+        (current_dist, current_node) = pq.pop()
+        If current_dist > dist[current_node]: Continue
+        For each neighbor of current_node:
+            new_dist = current_dist + edge weight
+            If new_dist < dist[neighbor]:
+                dist[neighbor] = new_dist
+                pq.push((new_dist, neighbor))
+
+    Return dist
+
+
+4. Floyd-Warshall Algorithm:
+
+Function FloydWarshall(graph, n):
+    Initialize dist[i][j] = weight of edge i->j (or ∞ if no edge)
+    For k = 1 to n:
+        For i = 1 to n:
+            For j = 1 to n:
+                dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
+    Return dist
+
+
+5. Bellman-Ford Algorithm:
+
+Function BellmanFord(edges, n, source):
+    Initialize distances to ∞, dist[source] = 0
+    For i = 1 to n-1:
+        For each edge (u, v, weight):
+            If dist[u] + weight < dist[v]:
+                dist[v] = dist[u] + weight
+    Return dist
+
+
+6. Prim's Algorithm:
+
+Function Prim(graph, n):
+    Initialize MST cost = 0
+    Initialize minHeap priority queue, pq
+    Add node 1 to pq with weight 0
+    visited = array of size n, initialized to false
+    While pq is not empty:
+        (weight, node) = pq.pop()
+        If node is already visited: Continue
+        Add weight to MST cost
+        Mark node as visited
+        For each neighbor of node:
+            If neighbor is not visited:
+                pq.push((edge weight, neighbor))
+    Return MST cost
+
+
+7. Kruskal's Algorithm:
+
+Function Kruskal(edges, n):
+    Sort edges by weight
+    Initialize DSU (Disjoint Set Union) with n nodes
+    MST cost = 0, edges_in_MST = 0
+    For each edge (u, v, weight):
+        If u and v are not in the same set:
+            Union(u, v) in DSU
+            Add weight to MST cost
+            edges_in_MST += 1
+        If edges_in_MST == n-1: Break
+    Return MST cost
+
+
+
+8. Merge Sort (Divide and Conquer)
+
+Function MergeSort(arr, left, right):
+    If left >= right:
+        Return
+    mid = (left + right) // 2
+    MergeSort(arr, left, mid)      // Sort left half
+    MergeSort(arr, mid + 1, right) // Sort right half
+    Merge(arr, left, mid, right)  // Merge two halves
+
+Function Merge(arr, left, mid, right):
+    Create temporary arrays L and R:
+        L = arr[left..mid]
+        R = arr[mid+1..right]
+    i = 0, j = 0, k = left
+    While i < size of L and j < size of R:
+        If L[i] <= R[j]:
+            arr[k] = L[i]
+            i += 1
+        Else:
+            arr[k] = R[j]
+            j += 1
+        k += 1
+    Copy remaining elements from L, if any
+    Copy remaining elements from R, if any
+
+
+9. Binary Search (Iterative and Recursive)
+
+Iterative Version:
+
+Function BinarySearch(arr, target):
+    left = 0, right = size of arr - 1
+    While left <= right:
+        mid = (left + right) // 2
+        If arr[mid] == target:
+            Return mid
+        Else If arr[mid] < target:
+            left = mid + 1
+        Else:
+            right = mid - 1
+    Return -1  // Target not found
+
+
+Recursive Version:
+
+Function BinarySearchRecursive(arr, left, right, target):
+    If left > right:
+        Return -1
+    mid = (left + right) // 2
+    If arr[mid] == target:
+        Return mid
+    Else If arr[mid] < target:
+        Return BinarySearchRecursive(arr, mid + 1, right, target)
+    Else:
+        Return BinarySearchRecursive(arr, left, mid - 1, target)
+
+
+10. Quick Sort (Divide and Conquer)
+
+Function QuickSort(arr, low, high):
+    If low >= high:
+        Return
+    pivot = Partition(arr, low, high)  // Partition the array
+    QuickSort(arr, low, pivot - 1)     // Sort left of pivot
+    QuickSort(arr, pivot + 1, high)    // Sort right of pivot
+
+Function Partition(arr, low, high):
+    pivot = arr[high]  // Choose last element as pivot
+    i = low - 1        // Index of smaller element
+    For j = low to high - 1:
+        If arr[j] <= pivot:
+            i += 1
+            Swap(arr[i], arr[j])  // Swap elements smaller than pivot
+    Swap(arr[i + 1], arr[high])  // Place pivot in correct position
+    Return i + 1                 // Return pivot index
+
+
